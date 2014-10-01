@@ -183,3 +183,5 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 bower_components/
+
+*.orig
