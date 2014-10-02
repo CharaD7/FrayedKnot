@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22013.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FrayedKnot.Client", "http://localhost:30642", "{08BEE120-C5A8-4F14-9AA3-A570FFFF88C3}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_30642"
+		Debug.AspNetCompiler.PhysicalPath = "FrayedKnot.Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_30642\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_30642"
+		Release.AspNetCompiler.PhysicalPath = "FrayedKnot.Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_30642\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "FrayedKnot.Client\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08BEE120-C5A8-4F14-9AA3-A570FFFF88C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BEE120-C5A8-4F14-9AA3-A570FFFF88C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
