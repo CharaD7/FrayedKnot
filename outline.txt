@@ -1,0 +1,56 @@
+1 Designing for Mobile (Both)
+When do you choose the web stack over native
+Site versus package (do you really need an app?) 
+What use cases from your app are going to be on a website versus in an app
+What processing are you going to do on the client
+Image sizing
+JavaScript
+Intuitive
+
+2 Mobile UI (Christopher)
+Start with CSS media queries
+Then ask… do you want to do it this way?
+Then look at Bootstrap
+Dealing with images
+	div background
+	picture element
+	picture fill
+
+3 Integrating Touch (Christopher)
+Touch target minimum sizes
+hammer.js
+position with pointer events
+
+4 Server (Jeremy)
+Enumerate the options
+	Web API
+	Node JS
+	Azure Mobile Services
+	Buddy, Parse, etc.
+Reasoning for Mobile Services… gives us auth, push, etc.
+Build a quick mobile service
+Take them into existing mobile service
+
+5 Client (Jeremy)
+(Quickly) show process for generating angular app with yo
+Scaffolding a new route
+Accessing our mobile service using curl, fiddler, etc.
+HTTP access of the API using $http service
+Finally, using the darn SDK
+
+
+6 Offline Data (Christopher)
+app cache
+local storage
+session storage
+geolocation
+sync - ability to favorite knots
+
+7 Publishing to Azure (Jeremy)
+show some vs tooling
+	git
+	node.js tooling
+	bower/grunt/etc.
+publish
+git deploy
+site configuration in the portal
