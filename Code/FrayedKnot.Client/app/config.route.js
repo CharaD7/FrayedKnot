@@ -30,6 +30,12 @@
                     }
                 }
             }, {
+                url: '/knot/:name',
+                config: {
+                    templateUrl: 'app/knot/knot.html',
+                    title: 'knot'
+                }
+            }, {
                 url: '/admin',
                 config: {
                     title: 'admin',

@@ -1,0 +1,42 @@
+﻿<!--<link href="/app/knot/knot.css" rel="stylesheet" />-->
+
+<section class="mainbar" data-ng-controller="knot as knot">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wgreen">
+                        <div data-cc-widget-header title="{{knot.name}}"
+                             allow-collapse="true"></div>
+                        <div class="widget-content text-center text-info">
+                            <img ng-src="{{ knot.imageUrl }}" class="knot" />
+                        </div>
+                        <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget wviolet">
+                        <div data-cc-widget-header title="Steps ({{ vm.steps.length }} total)" allow-collapse="true"></div>
+                        <div class="widget-content text-left text-info">
+                            <table class="table table-condensed table-striped">
+                                <tbody>
+                                    <tr data-ng-repeat="step in vm.steps">
+                                        <td><img ng-src="{{ k.imageUrl }}" class="knot" /> {{step.name}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</section>

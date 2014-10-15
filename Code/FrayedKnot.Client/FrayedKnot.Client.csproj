@@ -70,6 +70,8 @@
     <Content Include="app\dashboard\dashboard.css" />
     <Content Include="app\dashboard\dashboard.html" />
     <Content Include="app\dashboard\dashboard.js" />
+    <Content Include="app\knot\knot.html" />
+    <Content Include="app\knot\knot.js" />
     <Content Include="app\layout\shell.html" />
     <Content Include="app\layout\shell.js" />
     <Content Include="app\layout\sidebar.html" />

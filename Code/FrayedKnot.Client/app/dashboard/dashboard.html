@@ -12,7 +12,7 @@
                             <table class="table table-condensed table-striped">
                                 <tbody>
                                     <tr data-ng-repeat="k in vm.knots">
-                                        <td><img ng-src="{{ k.imageUrl }}" class="knot"/> {{k.name}}</td>
+                                        <td><a href="#/knot/{{k.name}}"><img ng-src="{{ k.imageUrl }}" class="knot" /> {{k.name}}</a></td>
                                     </tr>
                                 </tbody>
                             </table>

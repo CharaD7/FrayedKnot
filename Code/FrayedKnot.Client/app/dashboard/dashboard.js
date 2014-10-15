@@ -13,7 +13,6 @@
             description: 'Knots are fun and useful!'
         };
         vm.messageCount = 0;
-        vm.people = [];
         vm.title = 'Dashboard';
 
         activate();
@@ -31,7 +30,7 @@
         }
 
         function getKnots() {
-            return datacontext.getKnots().then(function (data) { return vm.knots = data; });
+            return datacontext.getKnots().then(function (data) { return vm.knots = data; }, function (err) { debugger; });
         }
 
         function getCategories() {
