@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	<script>
+		document.createElement('picture');
+	</script>
+	<script src="Scripts/picturefill.min.js" async></script>
+</head>
+<body>
+	<!--<img src="Images/MVAPrep.jpg" />-->
+
+	<picture>
+		<source srcset="Images/MVAPrep.jpg" media="(min-width: 1024px)">
+		<source srcset="Images/MVAPrepMed.jpg" media="(min-width: 800px)">
+		<source srcset="Images/MVAPrepSmall.jpg" media="(min-width: 640px)">
+		<img src="Images/MVAPrep.jpg">
+	</picture>
+</body>
+</html>
