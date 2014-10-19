@@ -66,18 +66,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Background.html" />
+    <Content Include="browserconfig.xml" />
+    <Content Include="large.png" />
     <Content Include="PictureFill.html" />
     <Content Include="Images\MVAPrepSmall.jpg" />
     <Content Include="Images\MVAPrepMed.jpg" />
     <Content Include="Images\MVAPrep.jpg" />
     <Content Include="Scripts\picturefill.js" />
     <Content Include="Scripts\picturefill.min.js" />
+    <Content Include="square.png" />
     <Content Include="SVG.html" />
+    <Content Include="Tile.html" />
+    <Content Include="tiny.png" />
     <Content Include="Web.config" />
+    <Content Include="wide.png" />
+    <Content Include="xml\notifications.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
