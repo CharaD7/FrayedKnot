@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tile>
+	<visual lang="en-US" version="2">
+		<binding template="TileSquare150x150Text01" branding="name">
+			<text id="1">New Knot!</text>
+			<text id="2">Check it out!</text>
+		</binding>
+
+		<binding template="TileWide310x150Text01" branding="name">
+			<text id="1">New Knot!</text>
+			<text id="2">We just uploaded the shoelace knot!</text>
+		</binding>
+
+		<binding template="TileSquare310x310BlockAndText01" branding="name">
+			<text id="1">Frayed Knot - New Knot!</text>
+			<text id="2">We just uploaded the shoelace knot!</text>
+		</binding>
+	</visual>
+</tile>
