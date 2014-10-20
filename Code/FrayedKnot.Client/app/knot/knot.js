@@ -1,9 +1,9 @@
 ﻿(function () {
     'use strict';
     var controllerId = 'knot';
-    angular.module('app').controller(controllerId, ['common', datacontext, '$routeParams', knot]);
+    angular.module('app').controller(controllerId, ['common', 'datacontext', '$routeParams', '$scope', knot]);
 
-    function knot(common, datacontext, $routeParams) {
+    function knot(common, datacontext, $routeParams, $scope) {
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(controllerId);
 
@@ -15,11 +15,18 @@
             vm.steps = steps;
         });
 
+        $scope.myfunction = function (e) { alert(e); };
+
         activate();
 
         function activate() {
-            common.activateController([], controllerId)
-                .then(function () { });
+            common.activateController([getKnot($routeParams.name)], controllerId)
+                .then(function () { log('Knot data retrieved'); });
         }
+
+        function getKnot(name) {
+            return datacontext.getKnot({ name: name }).then(function (data) { return vm.knot = data; })
+        }
+
     }
 })();

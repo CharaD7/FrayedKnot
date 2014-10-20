@@ -13,7 +13,8 @@
 
         // 3rd Party Modules
         'ui.bootstrap',      // ui-bootstrap (ex: carousel, pagination, dialog)
-        'wams.module'
+        'wams.module',
+        'hammer' //hammer js
     ]);
     
     // Handle routing errors and success events

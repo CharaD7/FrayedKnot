@@ -2,8 +2,13 @@
 
 <section class="mainbar" data-ng-controller="knot as knot">
     <section class="matter">
+        <div style="border:solid 2px green;height:100px;" hammer-tap="{ fn: 'myfunction($event)', hold_timeout: 1000 }">
+            tap me please
+            
+        </div>
+
         <div class="container">
-            <div class="row">
+            <div class="row" ng-click="myfunction">
                 <div class="col-md-12">
                     <div class="widget wgreen">
                         <div data-cc-widget-header title="{{knot.name}}"

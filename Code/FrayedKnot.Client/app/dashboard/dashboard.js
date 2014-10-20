@@ -36,5 +36,6 @@
         function getCategories() {
             return datacontext.getCategories().then(function (data) { return vm.categories = data; });
         }
+        
     }
 })();

@@ -12,7 +12,8 @@
             getMessageCount: getMessageCount,
             getKnots: function () { return wams.query("knots"); },
             getSteps: function () { return wams.query("steps"); },
-            getCategories: function () { return wams.invokeApi("categories"); }
+            getCategories: function () { return wams.invokeApi("categories"); },
+            getKnot: function (filter) { return wams.query("knots", filter);}
         };
 
         return service;
