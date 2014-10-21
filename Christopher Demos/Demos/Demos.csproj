@@ -57,6 +57,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="hammer.html" />
+    <Content Include="Scripts\hammer.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -67,6 +74,7 @@
   <ItemGroup>
     <Content Include="Background.html" />
     <Content Include="browserconfig.xml" />
+    <Content Include="CascadingMenu.html" />
     <Content Include="large.png" />
     <Content Include="PictureFill.html" />
     <Content Include="Images\MVAPrepSmall.jpg" />
@@ -75,6 +83,7 @@
     <Content Include="Scripts\picturefill.js" />
     <Content Include="Scripts\picturefill.min.js" />
     <Content Include="square.png" />
+    <Content Include="ResizableSVG.html" />
     <Content Include="SVG.html" />
     <Content Include="Tile.html" />
     <Content Include="tiny.png" />
