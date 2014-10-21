@@ -16,11 +16,11 @@
         });
 
         $scope.nextKnot = function (e) {
-            location.href = "//#/knot/" + vm.knot.nextKnot.name;
+            //location.href = "//#/knot/" + vm.knot.nextKnot.name;
         };
 
         $scope.prevKnot = function (e) {
-            location.href = "//#/knot/" + vm.knot.prevKnot.name;
+            //location.href = "//#/knot/" + vm.knot.prevKnot.name;
         };
 
         activate();
