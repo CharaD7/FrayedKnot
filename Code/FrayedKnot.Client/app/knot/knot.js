@@ -15,7 +15,13 @@
             vm.steps = steps;
         });
 
-        $scope.myfunction = function (e) { alert(e); };
+        $scope.nextKnot = function (e) {
+            location.href = "//#/knot/" + vm.knot.nextKnot.name;
+        };
+
+        $scope.prevKnot = function (e) {
+            location.href = "//#/knot/" + vm.knot.prevKnot.name;
+        };
 
         activate();
 
@@ -25,7 +31,9 @@
         }
 
         function getKnot(name) {
-            return datacontext.getKnot({ name: name }).then(function (data) { return vm.knot = data; })
+            return datacontext.getKnot(name).then(function (data) {
+                return vm.knot = data;
+            })
         }
 
     }

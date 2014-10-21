@@ -2,17 +2,16 @@
 
 <section class="mainbar" data-ng-controller="knot as knot">
     <section class="matter">
-        <div style="border:solid 2px green;height:100px;" hammer-tap="{ fn: 'myfunction($event)', hold_timeout: 1000 }">
-            tap me please
-            
+        <div style="border:solid 2px green;height:100px;"
+            hammer-swipeleft="{ fn: 'nextKnot($event)'}"
+            hammer-swiperight="{ fn: 'prevKnot($event)'}">
         </div>
 
         <div class="container">
             <div class="row" ng-click="myfunction">
                 <div class="col-md-12">
                     <div class="widget wgreen">
-                        <div data-cc-widget-header title="{{knot.name}}"
-                             allow-collapse="true"></div>
+                        <div data-cc-widget-header title="{{knot.name}}" allow-collapse="true"></div>
                         <div class="widget-content text-center text-info">
                             <img ng-src="{{ knot.imageUrl }}" class="knot" />
                         </div>
@@ -22,26 +21,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="widget wviolet">
-                        <div data-cc-widget-header title="Steps ({{ vm.steps.length }} total)" allow-collapse="true"></div>
-                        <div class="widget-content text-left text-info">
-                            <table class="table table-condensed table-striped">
-                                <tbody>
-                                    <tr data-ng-repeat="step in vm.steps">
-                                        <td><img ng-src="{{ k.imageUrl }}" class="knot" /> {{step.name}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="widget-foot">
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 </section>

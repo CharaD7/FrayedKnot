@@ -12,25 +12,21 @@
             title: 'Knotty News',
             description: 'Knots are fun and useful!'
         };
-        vm.messageCount = 0;
         vm.title = 'Dashboard';
 
         activate();
 
         function activate() {
-            var promises = [getMessageCount(), getKnots(), getCategories()];
+            var promises = [getKnots(), getCategories()];
             common.activateController(promises, controllerId)
                 .then(function () { log('Activated Dashboard View'); });
         }
 
-        function getMessageCount() {
-            return datacontext.getMessageCount().then(function (data) {
-                return vm.messageCount = data;
-            });
-        }
-
         function getKnots() {
-            return datacontext.getKnots().then(function (data) { return vm.knots = data; }, function (err) { debugger; });
+            return datacontext.getKnots().then(
+                function (data) { return vm.knots = data; },
+                function (err) { debugger; }
+            );
         }
 
         function getCategories() {
