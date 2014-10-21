@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+	<img src="Images/MVAPrepMed.jpg" id="stretch" style="width:780px" />
+
+	<script src="Scripts/hammer.min.js"></script>
+	<script>
+		var stretch = document.getElementById('stretch');
+		var width = stretch.width;
+
+		var mc = new Hammer(stretch);
+		mc.add(new Hammer.Pinch({ threshold: 0 }));
+		mc.on('pinchmove', function (ev) {
+			stretch.style.width = width * (ev.scale/2) + 'px';
+		});
+	</script>
+</body>
+</html>
