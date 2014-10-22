@@ -38,18 +38,6 @@
 			$menu.mouseleave(function () {
 				$knots.slideUp();
 			});
-
-			menu.addEventListener('touchstart', function (e) {
-				$knots.slideToggle();
-				e.cancelBubble = true;
-			}, false);
-
-			menu.addEventListener('pointerenter', function (e) {
-				e.preventDefault();
-				e.cancelBubble = true;
-				$knots.slideToggle();
-				return false;
-			}, false);
 		});
 	</script>
 
