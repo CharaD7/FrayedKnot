@@ -10,17 +10,12 @@
         var vm = this;
         vm.name = $routeParams.name; //TODO: instead of just getting the name, fetch all of the knot details from WAMS
 
-        vm.steps = [];
-        datacontext.getSteps().then(function (steps) {
-            vm.steps = steps;
-        });
-
         $scope.nextKnot = function (e) {
-            //location.href = "//#/knot/" + vm.knot.nextKnot.name;
+            location.href = location.href.replace(/(\/knot\/).*/, '$1' + vm.nextKnot.name);
         };
 
         $scope.prevKnot = function (e) {
-            //location.href = "//#/knot/" + vm.knot.prevKnot.name;
+            location.href = location.href.replace(/(\/knot\/).*/, '$1' + vm.prevKnot.name);
         };
 
         activate();
@@ -32,7 +27,7 @@
 
         function getKnot(name) {
             return datacontext.getKnot(name).then(function (data) {
-                return vm.knot = data;
+                return angular.extend(vm, data);
             })
         }
 

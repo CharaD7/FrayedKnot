@@ -1,26 +1,12 @@
 ﻿<!--<link href="/app/knot/knot.css" rel="stylesheet" />-->
 
-<section class="mainbar" data-ng-controller="knot as knot">
-    <section class="matter">
-        <div style="border:solid 2px green;height:100px;"
-            hammer-swipeleft="{ fn: 'nextKnot($event)'}"
-            hammer-swiperight="{ fn: 'prevKnot($event)'}">
-        </div>
-
-        <div class="container">
-            <div class="row" ng-click="myfunction">
-                <div class="col-md-12">
-                    <div class="widget wgreen">
-                        <div data-cc-widget-header title="{{knot.name}}" allow-collapse="true"></div>
-                        <div class="widget-content text-center text-info">
-                            <img ng-src="{{ knot.imageUrl }}" class="knot" />
-                        </div>
-                        <div class="widget-foot">
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="mainbar" data-ng-controller="knot as vm" 
+    hammer-swipeleft="{ fn: 'nextKnot($event)'}"
+    hammer-swiperight="{ fn: 'prevKnot($event)'}">
+    <section class=" matter">
+        <div>
+            <h2>{{vm.name}}</h2>
+            <img ng-src="{{ vm.imageUrl }}" class="knot" style="height:200px;" />
         </div>
     </section>
 </section>
