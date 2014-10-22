@@ -16,12 +16,12 @@
 	<script>
 		function resize(scale) {
 			var scaleString = 'scale(' + scale + ')';
-			var stretch = document.getElementById('stretch');
-			stretch.setAttribute('transform', scaleString);
-			var children = stretch.getElementsByTagName('polygon');
-			for (index = 0; index < children.length; index++) {
-				children[index].setAttribute('transform', scaleString);
-			}
+			var inner = document.getElementById('inner');
+			inner.setAttribute('transform', scaleString);
+			//var children = stretch.getElementsByTagName('polygon');
+			//for (index = 0; index < children.length; index++) {
+			//	children[index].setAttribute('transform', scaleString);
+			//}
 		}
 
 		var mc = new Hammer(stretch);

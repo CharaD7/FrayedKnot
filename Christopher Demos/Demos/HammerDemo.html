@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+	<h2>Hammer Demo</h2>
+	<img src="Images/MVAPrepSmall.jpg" id="resize-image" />
+	
+	<script src="Scripts/jquery-2.1.1.min.js"></script>
+	<script src="Scripts/hammer.min.js"></script>
+	<script>
+		$(function () {
+			var image = document.getElementById('resize-image');
+			var $image = $('#resize-image');
+			var width = $image.width();
+
+			var mc = new Hammer(image);
+
+			mc.add(new Hammer.Pinch({ threshold: 0 }));
+			mc.on('pinch', function (ev) {
+				$image.width(width * ev.scale);
+			});
+		});
+	</script>
+</body>
+</html>
