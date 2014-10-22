@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>SVG Demo</title>
 </head>
 <body>
-	<svg height="200" width="200">
-		<polygon points="10,10 190,10 190,190 10,190"
+	<svg style="height:200px; width:200px;" id="stretch">
+		<polygon id="outer" points="10,10 190,10 190,190 10,190"
 			style="fill:lightblue; stroke:red; stroke-width:5" />
 
-		<polygon points="100,10 190,100 100,190 10,100"
+		<polygon points="100,10 190,100 100,190 10,100" id="inner"
 			style="fill:lightgreen; stroke:black; stroke-width:3" />
 	</svg>
 </body>

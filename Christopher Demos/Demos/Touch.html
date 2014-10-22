@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+	<div id="wibble" style="height:500px; width:500px; background-color:blue;"></div>
+
+	<script>
+		//var element = document.getElementById('touch');
+
+		//Other browsers
+		wibble.addEventListener('touchstart', function (ev) {
+			alert('Touched!');
+		});
+
+		//IE Event
+		wibble.addEventListener('pointerenter', function (ev) {
+			alert('Pointer!');
+		});
+	</script>
+</body>
+</html>

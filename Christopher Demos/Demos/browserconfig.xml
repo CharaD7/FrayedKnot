@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
 	<msapplication>
 		<tile>
@@ -6,7 +6,7 @@
 			<square150x150logo src="square.png"/>
 			<wide310x150logo src="wide.png"/>
 			<square310x310logo src="large.png"/>
-			<TileColor>#87a5c7</TileColor>
+			<TileColor>#e38126</TileColor>
 		</tile>
 		<notification>
 			<polling-uri src="http://localhost:1213/xml/notifications.xml"/>

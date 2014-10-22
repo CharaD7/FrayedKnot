@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	<style>
+		body {
+			font-size:16pt;
+		}
+	</style>
+</head>
+<body>
+	<h2>Frayed Knot</h2>
+
+	<div id="menu">
+		<h3>Knots</h3>
+		<div id="knots">
+			<div>Bowline</div>
+			<div>Square</div>
+			<div>Shoelace</div>
+		</div>
+	</div>
+
+
+
+	<script src="Scripts/jquery-2.1.1.min.js"></script>
+
+	<script>
+		$(function () {
+			var menu = document.getElementById('menu');
+			var $menu = $(menu);
+			var $knots = $('#knots');
+
+			$knots.hide();
+
+			$menu.mouseover(function () {
+				$knots.slideDown();
+			});
+			$menu.mouseleave(function () {
+				$knots.slideUp();
+			});
+		});
+	</script>
+
+
+
+
+</body>
+</html>

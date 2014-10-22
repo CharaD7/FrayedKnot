@@ -57,6 +57,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="BackgroundImage.html" />
+    <Content Include="browserconfig.xml" />
+    <Content Include="hammer.html" />
+    <Content Include="HammerDemo.html" />
+    <Content Include="Image.html" />
+    <Content Include="large.png" />
+    <Content Include="MediaQueries.html" />
+    <Content Include="Modernizr.html" />
+    <Content Include="Scripts\hammer.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -66,18 +80,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Background.html" />
-    <Content Include="browserconfig.xml" />
-    <Content Include="large.png" />
+    <Content Include="CascadingMenu.html" />
     <Content Include="PictureFill.html" />
     <Content Include="Images\MVAPrepSmall.jpg" />
     <Content Include="Images\MVAPrepMed.jpg" />
     <Content Include="Images\MVAPrep.jpg" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\picturefill.js" />
     <Content Include="Scripts\picturefill.min.js" />
+    <Content Include="ResizableSVG.html" />
     <Content Include="square.png" />
     <Content Include="SVG.html" />
     <Content Include="Tile.html" />
     <Content Include="tiny.png" />
+    <Content Include="Touch.html" />
     <Content Include="Web.config" />
     <Content Include="wide.png" />
     <Content Include="xml\notifications.xml">
