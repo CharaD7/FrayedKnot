@@ -60,6 +60,9 @@
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="BackgroundImage.html" />
     <Content Include="browserconfig.xml" />
+    <None Include="Cache.appchace" />
+    <Content Include="cache.html" />
+    <Content Include="Geolocation.html" />
     <Content Include="hammer.html" />
     <Content Include="HammerDemo.html" />
     <Content Include="Image.html" />
@@ -90,6 +93,7 @@
     <Content Include="Scripts\picturefill.min.js" />
     <Content Include="ResizableSVG.html" />
     <Content Include="square.png" />
+    <Content Include="storage.html" />
     <Content Include="SVG.html" />
     <Content Include="Tile.html" />
     <Content Include="tiny.png" />
